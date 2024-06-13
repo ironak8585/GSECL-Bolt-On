@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <nav class="navbar navbar-expand-lg navbar-light light-theme">
+        <a class="navbar-brand" href="#">TMS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course_listing.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course_details.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="user_profile.html">Profile</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="dashboard.html">Admin</a>
+                </li>
+            </ul>
+            <button class="btn btn-secondary ml-auto" onclick="toggleTheme()">Toggle Theme</button>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h1>User Profile</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control light-theme" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control light-theme" id="email" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-primary">Update Profile</button>
+        </form>
+    </div>
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-theme');
+            body.classList.toggle('light-theme');
+
+            const elements = document.querySelectorAll('.navbar, .card, .form-control');
+            elements.forEach(el => {
+                el.classList.toggle('dark-theme');
+                el.classList.toggle('light-theme');
+            });
+        }
+    </script>
+</body>
+</html>

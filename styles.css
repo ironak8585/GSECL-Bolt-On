@@ -1,0 +1,49 @@
+/* styles.css */
+
+body.light-theme {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.dark-theme {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.navbar.light-theme {
+    background-color: #e3f2fd;
+    color: #212529;
+}
+
+.navbar.dark-theme {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.navbar.dark-theme .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+
+.navbar.light-theme .navbar-nav .nav-link {
+    color: #212529;
+}
+
+.card.light-theme {
+    background-color: #fff;
+    color: #212529;
+}
+
+.card.dark-theme {
+    background-color: #495057;
+    color: #f8f9fa;
+}
+
+.form-control.light-theme {
+    background-color: #fff;
+    color: #212529;
+}
+
+.form-control.dark-theme {
+    background-color: #495057;
+    color: #f8f9fa;
+}
